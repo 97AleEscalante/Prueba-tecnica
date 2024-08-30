@@ -98,26 +98,3 @@ for fila in resultados:
     print(fila)
 conexion.close()
 
-#5. Escribe una consulta SQL para encontrar los nombres de los empleados que han
-# gestionado pedidos de productos de la categoría “Beverages” (Bebidas). Incluye en
-# el resultado el EmployeeID, FirstName, LastName, OrderID, ProductName y
-# CategoryName. Basarse en el siguiente diagrama.
-# SELECT 
-#     e.EmployeeID,
-#     f.FirstName,
-#     l.LastName,
-#     o.OrderID,
-#     p.ProductName,
-#     c.CategoryName
-# FROM 
-#     Employees e
-# JOIN 
-#     Orders o ON e.EmployeeID = o.EmployeeID
-# JOIN 
-#     OrderDetails od ON o.OrderID = od.OrderID
-# JOIN 
-#     Products p ON od.ProductID = p.ProductID
-# JOIN 
-#     Categories c ON p.CategoryID = c.CategoryID
-# WHERE 
-#     c.CategoryName = 'Beverages';
